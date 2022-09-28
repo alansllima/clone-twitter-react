@@ -1,5 +1,6 @@
 import styled, { css } from 'styled-components';
 import { LocationOn, Cake } from '../../styles/Icons';
+import Button from '../Button'
 
 export const Container = styled.div`
   display: flex;  
@@ -17,7 +18,7 @@ export const Container = styled.div`
 export const Banner = styled.div`
 flex-shrink: 0;
 width: 100%;
-height: min(33vw,199px);
+height: min(30vw,199px);
 
 background: var(--twitter);
 position: relative;
@@ -80,11 +81,20 @@ color: var(--gray);
 }
 
 `;
-export const EditButton = styled.div`
+export const EditButton = styled(Button)`
+position: absolute;
+top: 2vw;
+right: 7px;
+padding: 4px 16px;
+font-size: 15px;
 
-button{
-
+@media (min-width: 320px){
+  top: 10px;
+  padding: 10px 19px;
+  font-size: 15px;
+  
 }
+
 `;
 export const Followage = styled.div`
 display: flex;

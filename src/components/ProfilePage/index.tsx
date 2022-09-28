@@ -8,8 +8,8 @@ const ProfilePage: React.FC = () => {
       <Banner>
         <Avatar/>
       </Banner>
-      <ProfileData>
-        <EditButton>Editar perfil</EditButton>
+      <ProfileData className='profiledata'>
+        <EditButton outlined>Editar perfil</EditButton>
         <h1>Alan Lima</h1>
         <h2>@LorenIpsum</h2>
         <p>Developer at <a href="">@twitter</a></p>
